@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: monospace;
+  background-color: linen;
+  margin: 10px;
+  align-content:center;
+}
+
+section {
+  border-color: rgba(173, 167, 190, 0.637);
+  border-style: groove;
+  border-width: 1px;
+  border-radius: 15px;
+  border-collapse: separate;
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content:center
+}
+/*.titulo {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  }*/
+
+section h1 {
+  color: cadetblue;
+  margin-left: 35px;
+  align-content:center
+
+  
+}
+h2 {
+  font-size: x-large;
+  color: maroon;
+}
+
+p {
+  margin-left: 4px;
+}
+
+/* Color Theme Swatches in Hex */
+.Humans-1-hex {
+  color: #f2e74b;
+}
+.Humans-2-hex {
+  color: #f2c53d;
+}
+.Humans-3-hex {
+  color: #f2d16d;
+}
+.Humans-4-hex {
+  color: #f2dbae;
+}
+.Humans-5-hex {
+  color: #d97236;
+}
+
+.ng-valid:not(form).ng-touched {
+  border: 1px solid #42a948; /* green */
+}
+
+.ng-invalid:not(form).ng-touched {
+  border: 1px solid #a94442; /* red */
+}

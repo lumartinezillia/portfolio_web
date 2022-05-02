@@ -1,0 +1,29 @@
+{
+	"skills": [
+		{
+			"skill": "Inglés",
+			"percentage": "100",
+			"img": "https://images.vexels.com/media/users/3/188408/isolated/preview/7533ecb1a338fc37140a7dbf2f826a7f-lapiz-de-color-tema-escolar-icono-ingles.png"
+		},
+		{
+			"skill": "Trabajo en equipo",
+			"percentage": "69",
+			"img": "https://image.shutterstock.com/image-vector/team-work-logo-design-template-260nw-509762710.jpg"
+		},
+		{
+			"skill": "HTML5",
+			"percentage": "80",
+			"img": "https://us.123rf.com/450wm/innayatsuk/innayatsuk2102/innayatsuk210200051/165304530-orange-3d-html5-icon-isolated-on-white-background-.jpg?ver=6"
+		},
+		{
+			"skill": "Java",
+			"percentage": "90",
+			"img": "https://cdn.worldvectorlogo.com/logos/java.svg"
+		},
+		{
+			"skill": "Angular",
+			"percentage": "90",
+			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+		}
+	]
+}

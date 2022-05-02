@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="container-fluid">
+  <header>
+    <nav class="navbar navbar-default navbar-expand-lg col-md-12" role="navigation" id="portfolioNavBar">
+      <div class="container-fluid">
+        <a class="navbar-brand" target="_blank"
+          href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"><img
+            src="./assets/imagenes/APLogo-20-20.png" style="width: 20%;" alt="Argentina Programa -
+      #YoProgramo."></a>
+        <a href="#" class="nav-enlace">. IG .<i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="nav-enlace">. LI .<i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="nav-enlace">.. Log In ..</a>
+      </div>
+    </nav>
+    <div>
+      <div class="containerdiv" style="position: relative; left: 0; top: 0;">
+        <img class="banner" src="./assets/imagenes/banner1.jpg" style="width:100%;height:400px;" alt="Foto de portada" />
+        <img class="cornerimage" style="width: 220px;;height:220px;" src="./assets/imagenes/foto de perfil.jpg"
+          alt="Foto de Lucia Martinez" />
+      </div>
+    </div>
+    <div>
+      <h1 id="fullName"><strong>Lucía Martinez Illia</strong></h1>
+      <p id="position">Desarrolladora <strong>Web Full Stack</strong> Jr.</p>
+      <p id="ubication">Buenos Aires (Argentina)</p>
+    </div>
+  </header>
+
+  <section>
+    <h1>Acerca de</h1>
+    <p id="acercaDe">Desarrolladora Front End: html, css, javascript</p>
+    <button class="btn btn-dark" onclick="onEditar()">Editar</button>
+  </section>
+  <section>
+    <h1>Experiencia</h1>
+    <div class="container-fluid">
+      <div class="row mb-1">
+        <div class="col-2">
+          <img src="" class="img-fluid" alt="Foto hotel">
+        </div>
+        <div class="col">
+          <h2>Hotel Aguas Dulces</h2>
+          <p>Recepcionista</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img src="" class="img-fluid" alt="Foto TangoCode">
+        </div>
+        <div class="col">
+          <h2>TangoCode</h2>
+          <p>QA Junior</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Educación</h1>
+    <div class="container-fluid">
+      <div class="row mb-3">
+        <div class="col-2">
+          <img src="imagenes/APLogo-20-20.png" style="background-color: rgb(81, 146, 124);" class="img-fluid" alt="Imágen estudio 1 Argentina Programa -
+          #YoProgramo.">
+        </div>
+        <div class="col">
+          <h2>Argentina Programa 2021</h2>
+          <p>YoProgramo</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img src="imagenes/foto de perfil.jpg" class="img-fluid" alt="Imágen estudio 2">
+        </div>
+        <div class="col">
+          <h2>Argentina Programa 2020</h2>
+          <p>SeProgramar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Hard & Soft Skills</h1>
+    <div class="container-fluid">
+      <div class="row mb-3">
+        <div class="col-2">
+          <img src="" class="img-fluid" alt="Porcentaje de conocimiento1">
+        </div>
+        <div class="col">
+          <h2>Conocimiento 1</h2>
+          <p>Detalle</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img src="" class="img-fluid" alt="Porcentaje de conocimiento2">
+        </div>
+        <div class="col">
+          <h2>Conocimiento 2</h2>
+          <p>Detalle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Proyectos</h1>
+    <div class="container-fluid">
+      <div class="row mb-3">
+        <div class="col-2">
+          <img src="imagenes/APLogo-20-20.png" style="background-color: rgb(81, 146, 124);" class="img-fluid" alt="Imágen estudio 1 Argentina Programa -
+          #YoProgramo.">
+        </div>
+        <div class="col">
+          <h2>Proyecto Argentina Programa</h2>
+          <p>YoProgramo</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img src="imagenes/foto de perfil.jpg" class="img-fluid" alt="Imágen estudio 2">
+        </div>
+        <div class="col">
+          <h2>Argentina Programa 2020</h2>
+          <p>SeProgramar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>@2022 Lucía Martinez Illia</p>
+  </footer>
+
+  <script src="js/app.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

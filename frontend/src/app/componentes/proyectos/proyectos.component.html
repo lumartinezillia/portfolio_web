@@ -1,0 +1,53 @@
+<section>
+  <h1>Proyectos</h1>
+  <div class="container-fluid">
+    <div *ngFor="let item of proyecto" class="row mb-3">
+      <div class="col">
+        <h2>{{item.proyect}}</h2>
+        <p>{{item.technologies}}</p>
+        <p>{{item.year}}</p>
+      </div>
+      <div class="col"><button *ngIf="usuarioAutenticado" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+          data-bs-target="#modalProyectos" (click)="mostrarDatosProyectos()">Editar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalProyectos" tabindex="-1" aria-labelledby="modalProyectos" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar proyectos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="form">
+          <div class="mb-3">
+            <label for="proyect" class="form-label">Proyecto</label>
+            <input type="text" class="form-control" id="proyect" aria-describedby="proyectHelp" formControlName="title">
+            <!--<div *ngIf="proyect?.invalid && (proyect?.dirty || proyect?.touched)">
+              <div *ngIf="proyect?.errors?.['required']" class="text-danger">
+                El título o curso es obligatorio.
+              </div>
+            </div>
+          </div>-->
+            <div class="mb-3">
+              <label for="technologies" class="form-label">Tecnologías utilizadas</label>
+              <input type="text" class="form-control" id="technologies" aria-describedby="technologiesHelp"
+                formControlName="technologies">
+            </div>
+            <div class="mb-3">
+              <label for="year" class="form-label">Año</label>
+              <input type="text" class="form-control" id="year" aria-describedby="yearHelp" formControlName="year">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cerrarModalProyectos" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary" (click)="guardarProyectos()">Guardar</button>
+      </div>
+    </div>
+  </div>

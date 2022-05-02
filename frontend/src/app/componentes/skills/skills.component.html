@@ -1,0 +1,47 @@
+<section>
+  <h1>Hard & Soft Skills</h1>
+  <div class="container-fluid">
+    <div *ngFor="let item of skills" class="row mb-3">
+      <div class="col">
+        <h2>{{item.skill}}</h2>
+        <p>{{item.percentage}}</p>
+      </div>
+      <div class="col"><button *ngIf="usuarioAutenticado" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+        data-bs-target="#modalSkills" (click)="mostrarDatosSkills()">Editar</button> </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalSkills" tabindex="-1" aria-labelledby="modalSkills" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar educación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="form">
+          <div class="mb-3">
+            <label for="skill" class="form-label">Skill</label>
+            <input type="text" class="form-control" id="skill" aria-describedby="skillHelp" formControlName="skill">
+            <!--<div *ngIf="skill?.invalid && (skill?.dirty || skill?.touched)">
+              <div *ngIf="skill?.errors?.['required']" class="text-danger">
+                El título o curso es obligatorio.
+              </div>
+            </div>
+          </div>-->
+            <div class="mb-3">
+              <label for="percentage" class="form-label">Porcentaje de conocimiento</label>
+              <input type="text" class="form-control" id="percentage" aria-describedby="percentageHelp"
+                formControlName="percentage">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cerrarModalSkills" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary" (click)="guardarSkills()">Guardar</button>
+      </div>
+    </div>
+  </div>

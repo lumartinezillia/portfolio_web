@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "fullName": "Santi Korovsky",
+      "position": "músico",
+      "ubication": "Buenos Aires (Argentina)",
+      "image": "./assets/imagenes/foto de perfil.jpg",
+      "id": 2
+    },
+    {
+      "fullName": "Santi Korovsky TEST",
+      "position": "músicoTEST",
+      "ubication": "ucrania",
+      "image": "./assets/imagenes/foto de perfil.jpg",
+      "id": 3
+    },
+    {
+      "fullName": "Santi Korovsky",
+      "position": "músico",
+      "ubication": "Buenos Aires (Argentina)",
+      "image": "./assets/imagenes/foto de perfil.jpg",
+      "id": 4
+    },
+    {
+      "fullName": "Santi Korovsky",
+      "position": "ratón",
+      "ubication": "Buenos Aires (Argentina)",
+      "image": "./assets/imagenes/foto de perfil.jpg",
+      "id": 5
+    },
+    {
+      "fullName": "Santi O Korovsky",
+      "position": "músico frontend",
+      "ubication": "Buenos Aires (Argentina)",
+      "image": "./assets/imagenes/foto de perfil.jpg",
+      "id": 6
+    },
+    {
+      "job": "Recepcionista",
+      "company": "Hotel",
+      "start": "2012",
+      "end": "2015",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

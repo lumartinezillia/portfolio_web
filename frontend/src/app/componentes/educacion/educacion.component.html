@@ -1,0 +1,62 @@
+<section>
+  <h1>Educación</h1>
+  <div class="container-fluid ">
+    <div *ngFor="let item of educacion" class="row mb-3">
+      <div class="col-2">
+        <img [src]="item.img" style="background-color: rgb(81, 146, 124);" class="img-fluid" alt="Imágen estudio 1 Argentina Programa -
+          #YoProgramo.">
+      </div>
+      <div class="col">
+        <h2>{{item.title}}</h2>
+        <p>{{item.school}}</p>
+        <p>{{item.start}}</p>
+        <p>{{item.end}}</p>
+      </div>
+      <div class="col"><button *ngIf="usuarioAutenticado" class="btn btn-dark btn-sm" data-bs-toggle="modal"
+          data-bs-target="#modalEducacion" (click)="mostrarDatosEducacion()">Editar</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalEducacion" tabindex="-1" aria-labelledby="modalEducacion" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar educación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="form">
+          <div class="mb-3">
+            <label for="title" class="form-label">Título</label>
+            <input type="text" class="form-control" id="title" aria-describedby="titleHelp" formControlName="title">
+            <!--<div *ngIf="title?.invalid && (title?.dirty || title?.touched)">
+              <div *ngIf="title?.errors?.['required']" class="text-danger">
+                El título o curso es obligatorio.
+              </div>
+            </div>
+          </div>-->
+            <div class="mb-3">
+              <label for="school" class="form-label">Entidad educativa</label>
+              <input type="text" class="form-control" id="school" aria-describedby="schoolHelp"
+                formControlName="school">
+            </div>
+            <div class="mb-3">
+              <label for="start" class="form-label">Año de inicio</label>
+              <input type="text" class="form-control" id="start" aria-describedby="startHelp" formControlName="start">
+            </div>
+            <div class="mb-3">
+              <label for="end" class="form-label">Año de finalización</label>
+              <input type="text" class="form-control" id="end" aria-describedby="endHelp" formControlName="end">
+              <div id="emailHelp" class="form-text">Indicar año</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cerrarModalEducacion" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary" (click)="guardarEducacion()">Guardar</button>
+      </div>
+    </div>
+  </div>

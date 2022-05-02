@@ -1,0 +1,13 @@
+{
+    "Persona":
+        {
+            "fullName": "Santi Korovsky",
+            "dateOfBirth": "15/03/1980",
+            "aboutMe": "Matemático, físico y humorista argentino",
+            "mail": "santi@gmail.com",
+            "backImage": "",
+            "image": "./assets/imagenes/foto de perfil.jpg",
+            "position": "pediatra",
+            "ubication":"Buenos Aires (Argentina)"
+        }
+}

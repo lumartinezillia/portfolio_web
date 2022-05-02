@@ -1,0 +1,19 @@
+{
+	"proyecto": [
+		{
+			"proyect": "Argentina programa - Mi portfolio",
+			"technologies": "Html, Css, JavaScript, Angular, Boostrap, Java, REST, Git",
+			"year": "2023"
+		},
+		{
+			"proyect": "proyecto 2",
+			"technologies": "python, django",
+			"year": "2018"
+		},
+		{
+			"proyect": "proyecto 3",
+			"technologies": "JIRA",
+			"year": "2014"
+		}
+	]
+}
